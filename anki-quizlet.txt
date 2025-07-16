@@ -1,0 +1,9 @@
+Salut   Hello
+Hej Hello
+Moin    Hello
+Moien   Hello
+Hallo   Hello
+Na? Hello
+Äddi    Bye
+Tschüss Bye
+Au revoir   Bye

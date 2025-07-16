@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>FlashCards</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <!--link  to help popup-->
+            <a id="help" class="extra-button">ℹ️</a>
+            <h1>FlashCards</h1>
+            <!--link to quiz-->
+            <button>Start Test!</button>
+            <!--link to card editor: import, export, edit card-DBs-->
+            <button>Card Editor</button>
+            <hr />
+        </header>
+        <main>
+            <!--Depending on what ist chosen in the header. Quiz or editor will be shown here-->
+            <section class="gamebox">
+                <!--link to settings for the quiz -->
+                <a id="settings" class="extra-button">⚙️</a>
+
+                <h2>Test your knowledge!</h2>
+                <section class="displaybox">
+                    <div class="flex-container">
+                        <div class="flex-item" id="card-front">
+                            <p>[empty]</p>
+                        </div>
+                        <div class="flex-item-divider">
+                            <p id="show">🔄</p>
+                        </div>
+                        <div class="flex-item" id="card-back">
+                            <!--should be greyed out until toogled. maybe: show just one side at a time 
+                            and toogle with a 🔄-button-->
+                            <p>[empty]</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="flex-container">
+                    <div id="remembered" class="flex-item-eval-buttons">
+                        <p>✅</p>
+                    </div>
+                    <div id="forgotten" class="flex-item-eval-buttons">
+                        <p>❌</p>
+                    </div>
+                    <div id="edit-this" class="flex-item-eval-buttons">
+                        <p>✏️</p>
+                    </div>
+                </div>
+                <p>
+                    Quiz mode: ... <br />
+                    Card-Set: ...
+                </p>
+            </section>
+        </main>
+        <footer>
+            <hr />
+            <p>This is a project from learners for learners!</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
