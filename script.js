@@ -42,7 +42,8 @@ let exampleCards = [
   },
 ];
 
-// INTERVALLS: tiers is the table to determine how long a card will be postponed.
+//// INTERVALLS! ////
+// tiers is the table to determine how long a card will be postponed.
 // keys are tiers, the content is the number of days.
 const tiers = {
   1: 1,
@@ -93,25 +94,3 @@ document.getElementById("show").addEventListener("click", function () {
 });
 
 displayCurrentCard();
-
-//// Old and not needed! ////
-/*
-for (let c of exampleCards) {
-    console.log(c);
-    const answer = prompt(
-        c["front"] +
-            "\n\n[d] - to discover back, \n[f] - if forgot, \n[g] - if good, \n[e] to exit."
-    );
-    if (answer === "e") {
-        break;
-    } else if (answer === "d") {
-        alert(c["back"]);
-    } else if (answer === "f") {
-        c["rating"]--;
-    } else if (answer === "g") {
-        c["rating"]++;
-    } else {
-        break;
-    }
-}
-*/
