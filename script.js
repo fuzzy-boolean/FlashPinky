@@ -55,6 +55,32 @@ const tiers = {
   7: 7,
 };
 
+function makeDaylyDeck() {
+  // 1. search for all 'active' & 'due' (today or in the past) cards in the database.
+  // 2. append theses to an array and shuffle it.
+  // 3. return the array. (lenth of the array could be writen to a variable in global scope!)
+}
+
+function startTest(numberOfCards) {
+  // 0 = all cards in the daylyDeck
+  // 1. display the current card's (daylyDeck[counter]) FRONT
+  // 2. onEvent (space or button): display  current card's BACK
+  // 3. onEvent "remembered" (space or button):
+  //    - set new 'due date' and promote the card:
+  //      - DUE = today + tiers[TIER] days (IN THE DATABASE!)
+  //      - tier++; (IN THE DATABASE!)
+  // 4. onEvent "forgotten" (f or button):
+  //    - add to immidiate review after the test
+  //    - demote TIER: tier--; (IN THE DATABASE!)
+  //    - set DUE to tomorrow (IN THE DATABASE!)
+  // 5. if counter != daylyDeck.lenght : counter++; repeat.
+  //      - else:
+  //        - stop test
+  //        - counter = 0;
+  //        - start immidiate review
+  // 6. End-Matter: Evaluation and stuff ...
+}
+
 function displayCurrentCard() {
   card = exampleCards[counter];
   document.getElementById("card-front").textContent = card.content.front;

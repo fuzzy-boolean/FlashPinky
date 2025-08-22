@@ -1,0 +1,12 @@
+// by now this is only a prototype of how a card should be built
+
+cardPrototype = {
+    ID: 1,                                      //expects INTEGER
+    front: "Hej",                               //expects STRING
+    back: "Salut",                              //expects STRING
+    active: False,                              //expects BOOLEAN (has the card been initially studied?)
+    due: /*date-object for 20250101*/,          //expects DATE-OBJECT
+    tags: ["swedish to French", "swedish 101"], //expects an ARRAY (of STRINGS)
+    tier: 0,                                    //expects INTEGER
+    totalTests: 0,                              //expects INTEGER
+}
