@@ -62,7 +62,8 @@ function makeDaylyDeck() {
 }
 
 function startTest(numberOfCards) {
-  // 0 = all cards in the daylyDeck
+  // numberOfCards == 0: all cards in the daylyDeck
+  // 0. counter = 0;
   // 1. display the current card's (daylyDeck[counter]) FRONT
   // 2. onEvent (space or button): display  current card's BACK
   // 3. onEvent "remembered" (space or button):
@@ -76,7 +77,7 @@ function startTest(numberOfCards) {
   // 5. if counter != daylyDeck.lenght : counter++; repeat.
   //      - else:
   //        - stop test
-  //        - counter = 0;
+  //        - counter = 0; (?)
   //        - start immidiate review
   // 6. End-Matter: Evaluation and stuff ...
 }
